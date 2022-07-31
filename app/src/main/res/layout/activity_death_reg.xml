@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Birth_reg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="273dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/nepal" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Death Registartion"
+                    android:textAlignment="center"
+                    android:textColor="#3F51B5"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Plese fill all the detailed below "
+                    android:textColor="#3F51B5"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView9"
+                    app:layout_constraintHorizontal_bias="0.509"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1115dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Deceased Details:"
+                    android:textColor="#090808"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="पुरा नाम:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <EditText
+                    android:id="@+id/Dname"
+                    android:layout_width="251dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="प्रमोद सिलवाल"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/textView12"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Full Name:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <EditText
+                    android:id="@+id/Dfullname"
+                    android:layout_width="217dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="Pramod Silwal"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Dname"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/Dname"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="D.O.Demise:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+                <EditText
+                    android:id="@+id/Ddob"
+                    android:layout_width="257dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="2056-01-12"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Dfullname"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/Dfullname"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:text="D.O.B:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <EditText
+                    android:id="@+id/Ddod"
+                    android:layout_width="209dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="2056-01-12"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Ddob"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/Ddob"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="Birth registration No:"
+                    android:textColor="#0C0808"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <EditText
+                    android:id="@+id/Dbirthregistartionnumber"
+                    android:layout_width="123dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    app:layout_constraintEnd_toEndOf="@+id/Ddod"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/Ddod"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="389dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="368dp"
+                        android:layout_height="176dp">
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Birth Address"
+                            android:textColor="#0E0B0B"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="District:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView50"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="V.D.C/Municiplity:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView51"
+                            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="19dp"
+                            android:text="Ward No:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView52"
+                            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+                        <EditText
+                            android:id="@+id/Ddistrict"
+                            android:layout_width="246dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Kathmandu"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView51"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/Dvdc"
+                            android:layout_width="159dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="JeetpurSimara"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView52"
+                            app:layout_constraintTop_toBottomOf="@+id/Ddistrict"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Dward"
+                            android:layout_width="235dp"
+                            android:layout_height="39dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="2"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView53"
+                            app:layout_constraintTop_toBottomOf="@+id/Dvdc"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="384dp"
+                    android:layout_height="199dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="198dp">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Demise Address:"
+                            android:textColor="#0E0B0B"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="District:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView14"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="V.D.C/Munciplity:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView20"
+                            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                        <EditText
+                            android:id="@+id/Ddistrictd"
+                            android:layout_width="246dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Kathmandu"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView20"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/Dvdcd"
+                            android:layout_width="157dp"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Khadananda Silwal"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/Ddistrictd"
+                            app:layout_constraintHorizontal_bias="0.041"
+                            app:layout_constraintStart_toEndOf="@+id/textView21"
+                            app:layout_constraintTop_toBottomOf="@+id/Ddistrictd"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Ward No:"
+                            android:textColor="#070505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView21"
+                            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                        <EditText
+                            android:id="@+id/Dwardd"
+                            android:layout_width="227dp"
+                            android:layout_height="42dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="3"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView13"
+                            app:layout_constraintTop_toBottomOf="@+id/Dvdcd"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="380dp"
+                    android:layout_height="337dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView70"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Deceased Details"
+                            android:textColor="#0E0B0B"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Citizenship no:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView70"
+                            app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+                        <TextView
+                            android:id="@+id/textView72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Issue District:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView71"
+                            app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Issue Date:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView72"
+                            app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:text="Mother's name:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView24"
+                            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                        <EditText
+                            android:id="@+id/Dissuedistrict"
+                            android:layout_width="185dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Simara,Bara"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/Dcitizen"
+                            app:layout_constraintStart_toEndOf="@+id/textView72"
+                            app:layout_constraintTop_toBottomOf="@+id/Dcitizen"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateClickableBoundsCheck" />
+
+                        <EditText
+                            android:id="@+id/Dcitizen"
+                            android:layout_width="183dp"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="03-21-05535"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView71"
+                            app:layout_constraintTop_toBottomOf="@+id/textView70"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/Dissuedate"
+                            android:layout_width="209dp"
+                            android:layout_height="39dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="2058-05-12"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/Dissuedistrict"
+                            app:layout_constraintStart_toEndOf="@+id/textView24"
+                            app:layout_constraintTop_toBottomOf="@+id/Dissuedistrict"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Dmother"
+                            android:layout_width="181dp"
+                            android:layout_height="39dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Bednaya Silwal"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/Dissuedate"
+                            app:layout_constraintStart_toEndOf="@+id/textView25"
+                            app:layout_constraintTop_toBottomOf="@+id/Dissuedate"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="Father's name:"
+                            android:textColor="#0B0A0A"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView25"
+                            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:text="GrandFather name:"
+                            android:textColor="#0B0A0A"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView23"
+                            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                        <EditText
+                            android:id="@+id/Dfather"
+                            android:layout_width="181dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Khadanda silwal"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView23"
+                            app:layout_constraintTop_toBottomOf="@+id/Dmother" />
+
+                        <EditText
+                            android:id="@+id/Dgrandfather"
+                            android:layout_width="144dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Khadanda silwal"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView26"
+                            app:layout_constraintTop_toBottomOf="@+id/Dfather" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/login_desihn"
+                    android:backgroundTint="#3F51B5"
+                    android:text="Submit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

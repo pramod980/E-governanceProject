@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "942773486149",
+    "project_id": "e-governance-554e4",
+    "storage_bucket": "e-governance-554e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942773486149:android:ea288dddffdb146afdd92c",
+        "android_client_info": {
+          "package_name": "com.example.e_governance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942773486149-j1o7hnh41u8pb217mk5hg1sl9ljbp5g9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3OmRIj6xiFGiSyU3wqb7u11sJ7QJOcsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942773486149-j1o7hnh41u8pb217mk5hg1sl9ljbp5g9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

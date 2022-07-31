@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Birth_reg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="273dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/nepal" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marriage Registartion"
+                    android:textAlignment="center"
+                    android:textColor="#3F51B5"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Plese fill all the detailed below "
+                    android:textColor="#3F51B5"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView9"
+                    app:layout_constraintHorizontal_bias="0.509"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1246dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Marriage Details:"
+                    android:textColor="#090808"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="Marriage Type"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <EditText
+                    android:id="@+id/Mtype"
+                    android:layout_width="197dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="Court Marriage"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Date of marriage:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <EditText
+                    android:id="@+id/Mdate"
+                    android:layout_width="170dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="2022-01-12"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Mtype"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/Mtype"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="VDC:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+                <EditText
+                    android:id="@+id/Mdistrict"
+                    android:layout_width="256dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="Bara"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Mdate"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/Mdate"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:text="District:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <EditText
+                    android:id="@+id/Mvdc"
+                    android:layout_width="281dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="jeetpur"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Mdistrict"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/Mdistrict"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="Ward:"
+                    android:textColor="#0C0808"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <EditText
+                    android:id="@+id/Mward"
+                    android:layout_width="274dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:hint="3"
+                    app:layout_constraintEnd_toEndOf="@+id/Mvdc"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/Mvdc"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="389dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Bride Details:"
+                            android:textColor="#0E0B0B"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="पुरा नाम:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView50"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Name:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView51"
+                            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="DOB:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView52"
+                            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="District:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@id/textView53"
+                            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="VDC/Munciplity:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView22"
+                            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="21dp"
+                            android:text="Ward:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView27"
+                            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                        <EditText
+                            android:id="@+id/Bname"
+                            android:layout_width="246dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Gita Parajuli"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView51"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/Bfullname"
+                            android:layout_width="251dp"
+                            android:layout_height="33dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Gita Parajuli"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView52"
+                            app:layout_constraintTop_toBottomOf="@+id/Bname"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Bward"
+                            android:layout_width="256dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="2"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView28"
+                            app:layout_constraintTop_toBottomOf="@+id/Bvdc"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Bvdc"
+                            android:layout_width="164dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="JeetpurSimara"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView27"
+                            app:layout_constraintTop_toBottomOf="@+id/Bdistrict"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Bdistrict"
+                            android:layout_width="239dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Bara"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView22"
+                            app:layout_constraintTop_toBottomOf="@+id/Bdob"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Bdob"
+                            android:layout_width="264dp"
+                            android:layout_height="33dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="2022-01-12"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView53"
+                            app:layout_constraintTop_toBottomOf="@+id/Bfullname"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="401dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Groom Details:"
+                            android:textColor="#0E0B0B"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="पुरा नाम:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView14"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Name:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView20"
+                            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="District:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView13"
+                            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:text="VDC/Municipality:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView33"
+                            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28dp"
+                            android:text="Ward:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView34"
+                            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                        <EditText
+                            android:id="@+id/GName"
+                            android:layout_width="260dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Shyam"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView20"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/GFULLname"
+                            android:layout_width="269dp"
+                            android:layout_height="44dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Shyam"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/GName"
+                            app:layout_constraintHorizontal_bias="0.041"
+                            app:layout_constraintStart_toEndOf="@+id/textView21"
+                            app:layout_constraintTop_toBottomOf="@+id/GName"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text="DOB:"
+                            android:textColor="#070505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView21"
+                            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                        <EditText
+                            android:id="@+id/Gdob"
+                            android:layout_width="282dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="3"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView13"
+                            app:layout_constraintTop_toBottomOf="@+id/GFULLname"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/Gdistrict"
+                            android:layout_width="251dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:hint="Simara"
+                            app:layout_constraintStart_toEndOf="@+id/textView33"
+                            app:layout_constraintTop_toBottomOf="@+id/Gdob" />
+
+                        <EditText
+                            android:id="@+id/Gvdc"
+                            android:layout_width="169dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:hint="Jeetpursimara"
+                            app:layout_constraintStart_toEndOf="@+id/textView34"
+                            app:layout_constraintTop_toBottomOf="@+id/Gdistrict" />
+
+                        <EditText
+                            android:id="@+id/Gward"
+                            android:layout_width="277dp"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:hint="3"
+                            app:layout_constraintStart_toEndOf="@+id/textView35"
+                            app:layout_constraintTop_toBottomOf="@+id/Gvdc" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/login_desihn"
+                    android:backgroundTint="#3F51B5"
+                    android:text="Submit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

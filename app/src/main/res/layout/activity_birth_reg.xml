@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Birth_reg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="273dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/nepal" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birth Registartion"
+                    android:textAlignment="center"
+                    android:textColor="#3F51B5"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Plese fill all the detailed below "
+                    android:textColor="#3F51B5"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView9"
+                    app:layout_constraintHorizontal_bias="0.509"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1208dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Cast:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Newly Born child Details:"
+                    android:textColor="#090808"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="पुरा नाम:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="251dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="प्रमोद सिलवाल"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/textView12"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Full Name:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <EditText
+                    android:id="@+id/Fullname"
+                    android:layout_width="217dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="Pramod Silwal"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Name"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/Name"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="Birth place:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+                <EditText
+                    android:id="@+id/Dob"
+                    android:layout_width="257dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="2056-01-12"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Fullname"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/Fullname"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:text="D.O.B:"
+                    android:textColor="#120A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <EditText
+                    android:id="@+id/Bplace"
+                    android:layout_width="209dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="Simara,Bara"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Dob"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/Dob"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/Cast"
+                    android:layout_width="267dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    android:ems="10"
+                    android:hint="Tharu"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Gender"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/Gender"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="Gender:"
+                    android:textColor="#0C0808"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="Number of child born:"
+                    android:textColor="#0C0808"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <Spinner
+                    android:id="@+id/Gender"
+                    android:layout_width="241dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    app:layout_constraintEnd_toEndOf="@+id/Bplace"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/Bplace"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Spinner
+                    android:id="@+id/Number"
+                    android:layout_width="117dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/login_desihn"
+                    app:layout_constraintEnd_toEndOf="@+id/Cast"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                    app:layout_constraintTop_toBottomOf="@+id/Cast"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="382dp"
+                    android:layout_height="234dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="261dp">
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Birth Address"
+                            android:textColor="#0E0B0B"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="District:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView50"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="V.D.C/Municiplity:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView51"
+                            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="19dp"
+                            android:text="Ward No:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView52"
+                            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="148dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:text="If born in foreign country:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView53"
+                            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+                        <EditText
+                            android:id="@+id/District"
+                            android:layout_width="246dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Kathmandu"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView51"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/Vdc"
+                            android:layout_width="159dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="JeetpurSimara"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView52"
+                            app:layout_constraintTop_toBottomOf="@+id/District"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Ward"
+                            android:layout_width="235dp"
+                            android:layout_height="39dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="2"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView53"
+                            app:layout_constraintTop_toBottomOf="@+id/Vdc"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Foreign"
+                            android:layout_width="170dp"
+                            android:layout_height="39dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Lahor,Pakistan"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/textView54"
+                            app:layout_constraintTop_toBottomOf="@+id/Ward"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="384dp"
+                    android:layout_height="137dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Grand parents name"
+                            android:textColor="#0E0B0B"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="पुरा नाम:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView14"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Full name:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView20"
+                            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                        <EditText
+                            android:id="@+id/Gname"
+                            android:layout_width="246dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="प्रमोद सिलवाल"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView20"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/Gfullname"
+                            android:layout_width="217dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Khadananda Silwal"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/Gname"
+                            app:layout_constraintStart_toEndOf="@+id/textView21"
+                            app:layout_constraintTop_toBottomOf="@+id/Gname"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="385dp"
+                    android:layout_height="261dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView70"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Parent's name"
+                            android:textColor="#0E0B0B"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="बाबुको नाम:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView70"
+                            app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+                        <TextView
+                            android:id="@+id/textView72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="Father's name:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView71"
+                            app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="अामाकाे नाम"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView72"
+                            app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:text="Mother's name:"
+                            android:textColor="#0B0505"
+                            android:textSize="20dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView24"
+                            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                        <EditText
+                            android:id="@+id/Ffullname"
+                            android:layout_width="185dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Khadananda Silwal"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/Fname"
+                            app:layout_constraintStart_toEndOf="@+id/textView72"
+                            app:layout_constraintTop_toBottomOf="@+id/Fname"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateClickableBoundsCheck" />
+
+                        <EditText
+                            android:id="@+id/Fname"
+                            android:layout_width="229dp"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="प्रमोद सिलवाल"
+                            android:inputType="textPersonName"
+                            app:layout_constraintStart_toEndOf="@+id/textView71"
+                            app:layout_constraintTop_toBottomOf="@+id/textView70"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/Mname"
+                            android:layout_width="209dp"
+                            android:layout_height="39dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="विमला  सिलवाल"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/Ffullname"
+                            app:layout_constraintStart_toEndOf="@+id/textView24"
+                            app:layout_constraintTop_toBottomOf="@+id/Ffullname"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <EditText
+                            android:id="@+id/Mfullname"
+                            android:layout_width="181dp"
+                            android:layout_height="39dp"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/login_desihn"
+                            android:ems="10"
+                            android:hint="Bimala Silwal"
+                            android:inputType="textPersonName"
+                            app:layout_constraintEnd_toEndOf="@+id/Mname"
+                            app:layout_constraintStart_toEndOf="@+id/textView25"
+                            app:layout_constraintTop_toBottomOf="@+id/Mname"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:backgroundTint="#3F51B5"
+                    android:text="Submit"
+                    android:background="@drawable/login_desihn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

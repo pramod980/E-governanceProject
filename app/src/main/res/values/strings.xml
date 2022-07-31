@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">E-Governance</string>
+    <string name="click"><u>click here for register</u></string>
+    <string name="alredy"><u>Already have an account?</u></string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="Born_child">
+        <item>Single</item>
+        <item>Twins</item>
+        <item>Triplets</item>
+        <item>More</item>
+    </string-array>
+
+</resources>
